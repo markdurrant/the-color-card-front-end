@@ -1,10 +1,16 @@
 body {
   color: $ink;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 .intro-text {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   margin-top: 4rem;
+}
+
+b {
+  color: darken($tcc-primary, 2.5);
+  font-weight: 700;
 }

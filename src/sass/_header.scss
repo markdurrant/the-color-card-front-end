@@ -7,8 +7,14 @@
 }
 
 .header-branding {
-  font-family: sans-serif;
-  display: inline-block
+  font-family: 'roboto condensed';
+  display: inline-block;
+  font-size: 4rem;
+  line-height: 0.1;
+  margin-bottom: 0;
+  position: relative;
+  top: 0.5rem;
+  padding-left: 3.2rem;
 }
 
 .header-btn {
@@ -17,13 +23,14 @@
   background-image: url('../assets/menu-btn.svg');
   background-repeat: no-repeat;
   background-size: 88px 64px;
-  background-position: center;
+  background-position: 1rem center;
   height: 6.2rem;
   float: right;
-  width: 7.6rem;
+  width: 9.6rem;
   background-color: $tcc-primary;
   transition: background-color .35s;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     background-color: darken($tcc-primary, 10);
