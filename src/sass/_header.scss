@@ -1,0 +1,35 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $tcc-primary;
+  color: $paper;
+}
+
+.header-branding {
+  font-family: sans-serif;
+  display: inline-block
+}
+
+.header-btn {
+  appearance: none;
+  border: 0;
+  background-image: url('../assets/menu-btn.svg');
+  background-repeat: no-repeat;
+  background-size: 88px 64px;
+  background-position: center;
+  height: 6.2rem;
+  float: right;
+  width: 7.6rem;
+  background-color: $tcc-primary;
+  transition: background-color .35s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($tcc-primary, 10);
+  }
+}
+
+.menu-btn {
+
+}
