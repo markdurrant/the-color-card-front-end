@@ -4,6 +4,7 @@
   width: 100%;
   background-color: $tcc-primary;
   color: $paper;
+  box-shadow: 0 1rem 0 0 rgba($paper, .65);
 }
 
 .header-branding {
@@ -20,6 +21,17 @@
 .header-btn {
   appearance: none;
   border: 0;
+  box-shadow: none;
+  background-color: $tcc-primary;
+  transition: background-color .25s;
+
+  &:hover {
+    background-color: darken($tcc-primary, 10);
+    box-shadow: none;
+  }
+}
+
+.menu-btn {
   background-image: url('../assets/menu-btn.svg');
   background-repeat: no-repeat;
   background-size: 88px 64px;
@@ -27,16 +39,4 @@
   height: 6.2rem;
   float: right;
   width: 9.6rem;
-  background-color: $tcc-primary;
-  transition: background-color .35s;
-  cursor: pointer;
-  outline: none;
-
-  &:hover {
-    background-color: darken($tcc-primary, 10);
-  }
-}
-
-.menu-btn {
-
 }
